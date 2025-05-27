@@ -52,7 +52,7 @@ const HoverReveal = ({
         )}
       ></div>
       <div className="flex max-mxl:flex-col justify-between">
-        <TextReveal>
+        <TextReveal classes="">
           <h1
             className={clsx(
               "font-normal transition-colors duration-300 text-[2.25rem] ",
@@ -74,7 +74,7 @@ const HoverReveal = ({
             }
           )}
         >
-          <TextReveal>
+          <TextReveal classes="">
             <p className="max-w-[448px] h-full  text-white font-normal text-[1rem] leading-[2]">
               {desc}
             </p>
