@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link1 from "./Navlinks/Link1";
 import Link2 from "./Navlinks/Link2";
 import { remvoeoverflowbody } from "@/lib/helpFunc";
@@ -11,6 +11,7 @@ import Link from "next/link";
 const Header = () => {
   const [activeDropDown, setActiveDropDown] = useState<number>(0);
   const [navopen, setNavOpen] = useState(false);
+  const [bodyElement, setBodyElement] = useState<HTMLElement | null>(null);
   // console.log(activeDropDown);
   const dropdownlinks = [
     "Expertise",
@@ -19,11 +20,15 @@ const Header = () => {
     "About us",
   ];
   const width = useWindowSize().width;
-  const body = document.getElementsByTagName("body");
-  // console.log(body);
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      setBodyElement(document.getElementsByTagName("body")[0]);
+    }
+  }, []);
+
   const handlenavlink = (index: number) => {
-    body[0].style.overflow = "hidden";
-    // console.log(index + 1);
+    if (!bodyElement) return;
+    bodyElement.style.overflow = "hidden";
 
     if (activeDropDown === index + 1) {
       setActiveDropDown(0);
@@ -32,9 +37,12 @@ const Header = () => {
       setActiveDropDown(index + 1);
     }
   };
+
   const handlenavopen = () => {
+    if (!bodyElement) return;
+
     if (!navopen) {
-      body[0].style.overflow = "hidden";
+      bodyElement.style.overflow = "hidden";
     } else {
       remvoeoverflowbody();
     }
@@ -146,7 +154,7 @@ const Header = () => {
                                 <path
                                   fill="#000"
                                   fillRule="evenodd"
-                                  d="m23.372 17.21-9.724 9.724 2.21 2.21L30 15 15.858.856l-2.21 2.21 9.724 9.723-.648.648H0v3.125h22.723z"
+                                  d="M23.372 17.21-9.724 9.724 2.21 2.21L30 15 15.858.856l-2.21 2.21 9.724 9.723-.648.648H0v3.125h22.723z"
                                   clipRule="evenodd"
                                   className=" [transition-property:all] duration-200 ease-[ease] delay-[0ms] stroke-[0]"
                                 />
@@ -174,7 +182,7 @@ const Header = () => {
                                 <path
                                   fill="#000"
                                   fillRule="evenodd"
-                                  d="m23.372 17.21-9.724 9.724 2.21 2.21L30 15 15.858.856l-2.21 2.21 9.724 9.723-.648.648H0v3.125h22.723z"
+                                  d="M23.372 17.21-9.724 9.724 2.21 2.21L30 15 15.858.856l-2.21 2.21 9.724 9.723-.648.648H0v3.125h22.723z"
                                   clipRule="evenodd"
                                   className=" [transition-property:all] duration-200 ease-[ease] delay-[0ms] stroke-[0]"
                                 />
@@ -202,7 +210,7 @@ const Header = () => {
                                 <path
                                   fill="#000"
                                   fillRule="evenodd"
-                                  d="m23.372 17.21-9.724 9.724 2.21 2.21L30 15 15.858.856l-2.21 2.21 9.724 9.723-.648.648H0v3.125h22.723z"
+                                  d="M23.372 17.21-9.724 9.724 2.21 2.21L30 15 15.858.856l-2.21 2.21 9.724 9.723-.648.648H0v3.125h22.723z"
                                   clipRule="evenodd"
                                   className=" [transition-property:all] duration-200 ease-[ease] delay-[0ms] stroke-[0]"
                                 />
@@ -302,7 +310,7 @@ const Header = () => {
                       </svg>
                     </div> */}
                     <div
-                      className={`absolute inset-0 h-full  border-transparent border-b-[calc(-0.571429px+0.238095vw)] bg-transparent z-[-1] transition-all duration-200 group-hover:bg-background2  `}
+                      className={`absolute inset-0 h-full border-transparent border-b-[calc(-0.571429px+0.238095vw)] bg-transparent z-[-1] transition-all duration-200 group-hover:bg-background2  `}
                     ></div>
                   </div>
                   {/* {index + 1 === 1 ? (

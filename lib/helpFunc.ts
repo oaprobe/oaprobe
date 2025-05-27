@@ -3,15 +3,16 @@
 // import { useWindowSize } from "@uidotdev/usehooks";
 
 const remvoeoverflowbody = () => {
-  const body = document && document.getElementsByTagName("body");
-  //   console.log(body[0].style.overflow === "hidden");
+  if (typeof document === "undefined") return;
 
-  if (body[0].style.overflow === "hidden") {
-    body[0].style.overflow = "";
-  } else {
-    return;
+  const body = document.getElementsByTagName("body")[0];
+  if (!body) return;
+
+  if (body.style.overflow === "hidden") {
+    body.style.overflow = "";
   }
 };
+
 // const windowsize = () => {
 //   const dimesions = useWindowSize();
 //   return dimesions;
