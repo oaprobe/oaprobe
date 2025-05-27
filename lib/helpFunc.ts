@@ -3,7 +3,7 @@
 // import { useWindowSize } from "@uidotdev/usehooks";
 
 const remvoeoverflowbody = () => {
-  const body = document.getElementsByTagName("body");
+  const body = document && document.getElementsByTagName("body");
   //   console.log(body[0].style.overflow === "hidden");
 
   if (body[0].style.overflow === "hidden") {
