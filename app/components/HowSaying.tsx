@@ -109,7 +109,7 @@ const HowSaying = () => {
           <div className="compromiseindivcont ">
             {/* <div className="cols"> */}
             <div className="compromiseindivcontleftcont">
-              <TextReveal>
+              <TextReveal classes="">
                 <div className="compromiseindivcontleftcontleftnum ">1</div>
                 <p className="compromiseindivcontleftcontlefdesc">
                   company’s compromised OA
@@ -117,7 +117,7 @@ const HowSaying = () => {
               </TextReveal>
             </div>
             <div className="compromiseindivcontleftcontrightcont">
-              <TextReveal>
+              <TextReveal classes="">
                 <p className="compromiseindivcontleftcontrightcontext">
                   might be an incident
                 </p>
@@ -127,7 +127,7 @@ const HowSaying = () => {
           <div className="compromiseindivcont">
             {/* <div className="cols"> */}
             <div className="compromiseindivcontleftcont">
-              <TextReveal>
+              <TextReveal classes="">
                 <div className="compromiseindivcontleftcontleftnum">10+</div>
                 <p className="compromiseindivcontleftcontlefdesc">
                   company’s compromised OA
@@ -135,7 +135,7 @@ const HowSaying = () => {
               </TextReveal>
             </div>
             <div className="compromiseindivcontleftcontrightcont">
-              <TextReveal>
+              <TextReveal classes="">
                 <p className="compromiseindivcontleftcontrightcontext">
                   signals a problem
                 </p>
@@ -145,7 +145,7 @@ const HowSaying = () => {
           <div className="compromiseindivcont">
             {/* <div className="cols"> */}
             <div className="compromiseindivcontleftcont">
-              <TextReveal>
+              <TextReveal classes="">
                 <div className="compromiseindivcontleftcontleftnum">100+</div>
                 <p className="compromiseindivcontleftcontlefdesc">
                   company’s compromised OA
@@ -153,7 +153,7 @@ const HowSaying = () => {
               </TextReveal>
             </div>
             <div className="compromiseindivcontleftcontrightcont">
-              <TextReveal>
+              <TextReveal classes="">
                 <p className="compromiseindivcontleftcontrightcontext">
                   reveals an epidemic
                 </p>
