@@ -6,6 +6,7 @@ import { remvoeoverflowbody } from "@/lib/helpFunc";
 import { motion } from "motion/react";
 import clsx from "clsx";
 import { useWindowSize } from "@uidotdev/usehooks";
+import Link from "next/link";
 
 const Header = () => {
   const [activeDropDown, setActiveDropDown] = useState<number>(0);
@@ -60,7 +61,7 @@ const Header = () => {
         <div className="grid bg-background border-b border-border h-full z-[2] relative grid-cols-[23fr_0fr_4fr_5fr] md:grid-cols-[13fr_0fr_1fr_2fr] mxl:grid-cols-[6fr_16fr_2fr_0fr]">
           <div className="flex z-[4] h-full justify-between pl-[calc(8px+1.04167vw)] mxl:pl-[calc(-5.71429px+2.38095vw)] md:pl-[calc(5.89474px+1.31579vw)]">
             <>
-              <a
+              <Link
                 aria-label="Vention"
                 href="/"
                 className="p-0 m-0 [color:inherit] no-underline box-border antialiased"
@@ -81,7 +82,7 @@ const Header = () => {
                     </svg>
                   </div>
                 </div>
-              </a>
+              </Link>
               <div className=" min-w-0 h-full block visible pl-[calc(-5.71429px+2.38095vw)] pr-[calc(5.89474px+1.31579vw)]">
                 <div className="p-0  min-w-0 relative h-full">
                   <div className="p-0 m-0 [box-sizing:initial] antialiased flex min-w-0 relative h-full items-center justify-center">
@@ -114,7 +115,7 @@ const Header = () => {
                         <div className=" min-w-0">
                           <span className=" min-w-0 !leading-[1.4] !font-normal !text-[calc(12.9474px !+ !0.657895vw)]" />
                         </div>
-                        <a
+                        <Link
                           aria-label="link"
                           href="/"
                           className="p-0 m-0 [color:inherit] no-underline box-border antialiased"
@@ -122,14 +123,14 @@ const Header = () => {
                           <div className="pt-[4px] pr-[calc(12.9474px+0.657895vw] box-border antialiased flex w-full justify-center items-center min-w-[calc(26px+14.1667vw)] mt-[calc(12.9474px+0.657895vw)]">
                             <span className=" min-w-0 !leading-[1.4] !font-normal !text-[calc(12.9474px+!0.657895vw)]" />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
                   <div className="p-0 m-0 [box-sizing:initial] antialiased min-w-0 absolute top-0 h-full w-[calc(6.42857px+11.9048vw)] right-[calc(-7.36842px-1.64474vw)]" />
                   <div className=" min-w-0 absolute bottom-0 invisible translate-x-0 translate-y-0 [transition-property:all] duration-200 ease-[ease] delay-[0ms] right-[calc(-6.89474px-1.31579vw)]">
                     <div className="m-0 box-border antialiased flex min-w-0 flex-col border border-solid [border-image:initial] gap-y-[calc(12.4737px+0.328947vw)] -mr-px">
-                      <a
+                      <Link
                         href="/"
                         className="p-0 m-0 [color:inherit] no-underline box-border antialiased"
                       >
@@ -156,7 +157,7 @@ const Header = () => {
                             US &amp; worldwide
                           </span>
                         </div>
-                      </a>
+                      </Link>
                       <a
                         href="/uk"
                         className="p-0 m-0 [color:inherit] no-underline box-border antialiased"

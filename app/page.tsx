@@ -1,7 +1,7 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Integrity from "./components/Integrity";
 import IntegrityCrisis from "./components/IntegrityCrisis";
-import HoverReveal from "./components/HoverReveal";
+// import HoverReveal from "./components/HoverReveal";
 import Hoverrevealcontainer from "./components/Hoverrevealcontainer";
 import HowSaying from "./components/HowSaying";
 import PreLoader from "./components/PreLoader";

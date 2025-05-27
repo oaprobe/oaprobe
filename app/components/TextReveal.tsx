@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import { motion, useInView } from "motion/react";
+import React from "react";
+import { motion } from "motion/react";
 // import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 // gsap.registerPlugin(ScrollTrigger);
@@ -27,7 +27,7 @@ const TextReveal = ({
   //     stagger: 0.2,
   //   });
   // }, []);
-  const childCount = React.Children.count(children);
+  // const childCount = React.Children.count(children);
   const container = {
     hidden: { opacity: 0 },
     show: {

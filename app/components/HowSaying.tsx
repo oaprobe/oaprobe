@@ -54,9 +54,9 @@ const HowSaying = () => {
     () => {
       if (width && height) {
         // console.log("shiva");
-        let g = width > height;
+        const g = width > height;
         console.log(g);
-        let l = height * (g ? 1 / 5 : 1);
+        const l = height * (g ? 1 / 5 : 1);
         const v =
           width > 1080
             ? 7

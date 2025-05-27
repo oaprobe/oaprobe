@@ -12,8 +12,8 @@ const remvoeoverflowbody = () => {
     return;
   }
 };
-const windowsize = () => {
-  const dimesions = useWindowSize();
-  return dimesions;
-};
-export { remvoeoverflowbody, windowsize };
+// const windowsize = () => {
+//   const dimesions = useWindowSize();
+//   return dimesions;
+// };
+export { remvoeoverflowbody };
