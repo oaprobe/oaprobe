@@ -3,19 +3,19 @@ import { Geist, Geist_Mono, Funnel_Display } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-const funnelDisplay = Funnel_Display({
-  variable: "--font-funnel-display",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+// const funnelDisplay = Funnel_Display({
+//   variable: "--font-funnel-display",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -36,10 +36,11 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`font-[neue-haas-grotesk-display-pro] ${funnelDisplay.className} ${geistSans.className} ${geistMono.className}  antialiased`}
+        style={{ overflow: "hidden" }}
+        className={`[font-family:'Neue_Haas_Grotesk_Display_Pro']   antialiased`}
       >
         <div className="min-h-[100dvh] ">
-          <main className="relative">
+          <main className=" main relative">
             <Header />
             {children}
           </main>

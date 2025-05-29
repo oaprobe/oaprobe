@@ -63,7 +63,7 @@ const Header = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="w-full fixed font-funnelDisplay top-0 z-[6778345] "
+      className="w-full fixed [font-family:'Neue_Haas_Grotesk_Display_Pro'] top-0 z-[6778345] "
     >
       <div className="mxl:h-[calc(6.28571px+3.21429vw)] h-[calc(45.3023px+1.74419vw)] max-h-[calc(45.3023px+1.74419vw)]  mxl:max-h-[calc(6.28571px+3.21429vw)] w-full max-w-screen z-[10] relative">
         <div className="grid bg-background border-b border-border h-full z-[2] relative grid-cols-[23fr_0fr_4fr_5fr] md:grid-cols-[13fr_0fr_1fr_2fr] mxl:grid-cols-[6fr_16fr_2fr_0fr]">

@@ -46,7 +46,7 @@ const TextReveal = ({
       opacity: 1,
       y: "0%",
       transition: {
-        duration: 0.2,
+        duration: 0.4,
       },
     },
   };
@@ -56,7 +56,7 @@ const TextReveal = ({
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className={classes}
+      className={`${classes} textreveal`}
     >
       {React.Children.map(children, (child) => (
         <div className="overflow-hidden">

@@ -13,10 +13,10 @@ const Integrity = () => {
             <div className="bg-background absolute bottom-0 right-0 w-[63px] h-[69px]"></div>
             <div className="mx-auto">
               <TextReveal classes="">
-                <p className=" font-semibold mxl:text-[40px] text-[2rem] leading-[2] tracking-[-.002em] text-white">
-                  IntegGrity Intelligence for
+                <p className=" font-medium mxl:text-[2.75rem] text-[2rem] leading-[2] tracking-[0.015em] text-white">
+                  Integrity Intelligence for
                 </p>
-                <p className="font-semibold  mxl:text-[40px] text-[2rem] leading-[2] tracking-[-.02em] text-white">
+                <p className="font-medium  mxl:text-[2.75rem] text-[2rem] leading-[2] tracking-[0.015em] text-white">
                   {" "}
                   Online Assessments
                 </p>
@@ -30,23 +30,23 @@ const Integrity = () => {
         <div className="min-w-0 flex px-7 py-10 items-end justify-end">
           <div className="md:hidden">
             <TextReveal classes="">
-              <p className="font-light text-[1rem] mxl:text-[1rem] text-near-black tracking--[.01em] leading-[2]">
+              <p className="font-medium text-[1rem] mxl:text-[1.25rem] tracking-[.035em] text-near-black  leading-[2]">
                 Protect your hiring pipeline{" "}
               </p>
-              <p className="font-light text-[1rem] mxl:text-[1rem] text-near-black tracking--[.01em] leading-[2]">
+              <p className="font-medium text-[1rem] mxl:text-[1.25rem] tracking-[.035em] text-near-black  leading-[2]">
                 from compromised candidates
               </p>
             </TextReveal>
           </div>
           <div className="max-md:hidden">
             <TextReveal classes="">
-              <p className="font-light text-[1rem] mxl:text-[1rem] text-near-black tracking--[.01em] leading-[2]">
+              <p className="font-medium text-[1rem] tracking-[.035em] mxl:text-[1.125rem] text-near-black  leading-[2]">
                 Protect your hiring pipeline{" "}
               </p>
-              <p className="font-light text-[1rem] mxl:text-[1rem] text-near-black tracking--[.01em] leading-[2]">
+              <p className="font-medium text-[1rem] tracking-[.035em] mxl:text-[1.125rem] text-near-black  leading-[2]">
                 from compromised{" "}
               </p>
-              <p className="font-light text-[1rem] mxl:text-[1rem] text-near-black tracking--[.01em] leading-[2]">
+              <p className="font-medium text-[1rem] tracking-[.035em] mxl:text-[1.125rem] text-near-black  leading-[2]">
                 candidates
               </p>
             </TextReveal>

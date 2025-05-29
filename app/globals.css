@@ -272,16 +272,16 @@ body {
   @apply text-[2.25rem] font-medium max-sm:self-start  text-black;
 }
 @utility compromiseindivcontleftcontlefdesc {
-  @apply text-[1rem] mxl:text-[1.125rem] font-normal text-black;
+  @apply text-[1rem] mxl:text-[1.125rem] tracking-[.045em] font-medium text-black;
 }
 @utility compromiseindivcontleftcontrightcont {
   @apply col-start-12 col-end-23;
 }
 @utility compromiseindivcontleftcontrightcontext {
-  @apply text-[1.8rem] mxl:text-[3rem]  tracking-tight  font-semibold text-grey-almost;
+  @apply text-[1.8rem] mxl:text-[3rem]  tracking-[.015em]  font-medium text-grey-almost;
 }
 @utility pattern-review {
-  @apply mxl:w-[calc(-12.4857px+8.16071vw)] mxl:h-[calc(-12.4857px+8.16071vw)] min-w-0 bg-primary rounded-[50%] w-[calc(50.2209px+5.51017vw)] h-[calc(50.2209px+5.51017vw)];
+  @apply mxl:w-[calc(-12.4857px+8.16071vw)] mxl:h-[calc(-12.4857px+8.16071vw)] min-w-0 bg-primary rounded-[50%] w-[calc(50.2209px+7.51017vw)] h-[calc(50.2209px+7.51017vw)];
 }
 @utility mobnavdrop {
   @apply flex bg-background flex-col h-[calc(100%+1px-var(--CALC\_FIRST\_HEADER\_HEIGHT))] ease-[ease] fixed w-full bottom-0 transition-[transform,visibility] duration-[0.5s,0s];

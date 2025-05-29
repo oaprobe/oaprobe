@@ -56,7 +56,7 @@ const HowSaying = () => {
         // console.log("shiva");
         const g = width > height;
         console.log(g);
-        const l = height * (g ? 1 / 5 : 1);
+        const l = height * (g ? 0.15 : 1);
         const v =
           width > 1080
             ? 7
@@ -74,8 +74,8 @@ const HowSaying = () => {
             scrollTrigger: {
               trigger: ".review-container",
               scrub: 1,
-              start: "top bottom+=400px",
-              end: "bottom bottom+=400px",
+              start: "top bottom+=".concat(l.toString()),
+              end: "bottom bottom+=".concat(l.toString()),
               // markers: true,
             },
             opacity: 1,
@@ -85,6 +85,7 @@ const HowSaying = () => {
             stagger: {
               // from: v * 4,
               amount: 1,
+              axis: "y",
               grid: [Math.ceil(iamgeslength / v), v],
             },
           }
@@ -130,7 +131,7 @@ const HowSaying = () => {
               <TextReveal classes="">
                 <div className="compromiseindivcontleftcontleftnum">10+</div>
                 <p className="compromiseindivcontleftcontlefdesc">
-                  company’s compromised OA
+                  companies compromised OA's
                 </p>
               </TextReveal>
             </div>
@@ -148,7 +149,7 @@ const HowSaying = () => {
               <TextReveal classes="">
                 <div className="compromiseindivcontleftcontleftnum">100+</div>
                 <p className="compromiseindivcontleftcontlefdesc">
-                  company’s compromised OA
+                  companies compromised OA's
                 </p>
               </TextReveal>
             </div>
@@ -169,13 +170,13 @@ const HowSaying = () => {
           <div className="review-container  grid  gap-[calc(11px+0.260417vw)_0px] mxl:grid-cols-7 mxl:gap-y-[calc(-2px+1.66667vw)] py-16 mxl:py-24 mxl:px-[calc(-5.71429px+2.38095vw)] md:grid-cols-5 md:gap-y-[calc(16.9474px+0.657895vw)] md:px-[calc(5.89474px+1.31579vw)] grid-cols-3 px-[calc(8px+1.04167vw)] ">
             {imagepatterns.map((item, index) => (
               <div key={index} className="relative min-w-0 ">
-                <div className="pattern-review group hover:bg-[#ebebed] ease-in duration-300">
+                <div className="pattern-review flex items-center justify-center group hover:bg-white ease-in duration-300">
                   <Image
                     src={item}
                     alt=""
                     width={100}
                     height={100}
-                    className="w-full opacity-0 group-hover:opacity-100 duration-300 h-full"
+                    className="w-[100px] h-[100px] rounded-[50%] opacity-0 group-hover:opacity-100 duration-300"
                   />
                 </div>
               </div>
@@ -195,9 +196,10 @@ const HowSaying = () => {
               </div> */}
               <div className="max-w-[555px] md:hidden text-[32px]  leading-[180%] font-medium text-black">
                 <TextReveal classes="">
-                  <p>Tracking Integrity: 1,000+ identifiers detected </p>
-                  <p>across compromised OAs</p>
-                  <p>of 100+ tech companies</p>
+                  <p>
+                    Tracking Integrity: 1,000+ identifiers detected across
+                    compromised OAs of 100+ tech companies
+                  </p>
                 </TextReveal>
               </div>
               <div className="max-w-[555px] max-md:hidden text-[32px]  leading-[180%] font-medium text-black">

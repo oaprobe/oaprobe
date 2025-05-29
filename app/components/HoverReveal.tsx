@@ -36,8 +36,8 @@ const HoverReveal = ({
         setActive(index + 1);
         setPrevActive(active);
       }}
-      className={clsx("p-10 2xl:p-20 relative ", {
-        "pb-24 2xl:pb-28": active === index + 1,
+      className={clsx("p-10  relative ", {
+        "pb-[80px]": active === index + 1,
       })}
     >
       <div
@@ -55,7 +55,7 @@ const HoverReveal = ({
         <TextReveal classes="">
           <h1
             className={clsx(
-              "font-normal transition-colors duration-300 text-[2.25rem] ",
+              "font-normal transition-colors duration-300 tracking-[.05rem] text-[2.25rem] ",
               {
                 "text-green": active === index + 1,
                 "text-black": active !== index + 1,
@@ -75,7 +75,7 @@ const HoverReveal = ({
           )}
         >
           <TextReveal classes="">
-            <p className="max-w-[448px] h-full  text-white font-normal text-[1rem] leading-[2]">
+            <p className="max-w-[448px] h-full  text-white font-normal text-[1rem] tracking-wider leading-[2]">
               {desc}
             </p>
           </TextReveal>
