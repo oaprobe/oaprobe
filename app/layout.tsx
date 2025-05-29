@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Funnel_Display } from "next/font/google";
+// import { Geist, Geist_Mono, Funnel_Display } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 
@@ -36,7 +36,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        style={{ overflow: "hidden" }}
+        // style={{ overflow: "hidden" }}
         className={`[font-family:'Neue_Haas_Grotesk_Display_Pro']   antialiased`}
       >
         <div className="min-h-[100dvh] ">

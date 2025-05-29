@@ -11,7 +11,7 @@ const PreLoader = ({
   const container = useRef<HTMLDivElement>(null);
   const counter = useRef<HTMLDivElement>(null);
   const [bodyElement, setBodyElement] = useState<HTMLElement | null>(null);
-  let i = {
+  const i = {
     value: 0,
   };
   useEffect(() => {
@@ -74,7 +74,7 @@ const PreLoader = ({
     () => {
       if (!bodyElement) return;
       const t = function () {
-        let o = Math.round(i.value);
+        const o = Math.round(i.value);
         if (counter.current) {
           counter.current.textContent = o.toString();
         }
@@ -82,8 +82,9 @@ const PreLoader = ({
       const r = gsap.timeline({
         onComplete: () => {
           setTimeout(() => {
-            if (!container.current) return;
-            container.current.remove();
+            if (container.current) {
+              container.current.remove();
+            }
           }, 500),
             (bodyElement.style.overflow = "");
           setLoading(true);

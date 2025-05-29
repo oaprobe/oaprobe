@@ -131,7 +131,7 @@ const HowSaying = () => {
               <TextReveal classes="">
                 <div className="compromiseindivcontleftcontleftnum">10+</div>
                 <p className="compromiseindivcontleftcontlefdesc">
-                  companies compromised OA's
+                  companies compromised OA&apos;s
                 </p>
               </TextReveal>
             </div>
@@ -149,7 +149,7 @@ const HowSaying = () => {
               <TextReveal classes="">
                 <div className="compromiseindivcontleftcontleftnum">100+</div>
                 <p className="compromiseindivcontleftcontlefdesc">
-                  companies compromised OA's
+                  companies compromised OA&apos;s
                 </p>
               </TextReveal>
             </div>
