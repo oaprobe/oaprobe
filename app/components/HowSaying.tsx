@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { gsap } from "gsap";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { useGSAP } from "@gsap/react";
@@ -47,6 +47,7 @@ const imagepatterns = [
 ];
 const iamgeslength = imagepatterns.length;
 const HowSaying = () => {
+  const [logonum, setLogonum] = useState(0);
   const { width, height } = useWindowSize();
   console.log(width, height);
 
@@ -101,6 +102,10 @@ const HowSaying = () => {
     },
     { dependencies: [width, height], revertOnUpdate: true }
   );
+
+  const handleclick = () => {
+    console.log("clicked");
+  };
 
   return (
     <section className="textcontainer">
@@ -170,13 +175,24 @@ const HowSaying = () => {
           <div className="review-container  grid  gap-[calc(11px+0.260417vw)_0px] mxl:grid-cols-7 mxl:gap-y-[calc(-2px+1.66667vw)] py-16 mxl:py-24 mxl:px-[calc(-5.71429px+2.38095vw)] md:grid-cols-5 md:gap-y-[calc(16.9474px+0.657895vw)] md:px-[calc(5.89474px+1.31579vw)] grid-cols-3 px-[calc(8px+1.04167vw)] ">
             {imagepatterns.map((item, index) => (
               <div key={index} className="relative min-w-0 ">
-                <div className="pattern-review flex items-center justify-center group hover:bg-white ease-in duration-300">
+                <div
+                  onClick={
+                    width && width < 768
+                      ? () => setLogonum(index + 1)
+                      : () => {}
+                  }
+                  className={`pattern-review flex items-center justify-center group ${
+                    index + 1 === logonum && "bg-white"
+                  } md:hover:bg-white ease-in duration-300`}
+                >
                   <Image
                     src={item}
                     alt=""
                     width={100}
                     height={100}
-                    className="w-[100px] h-[100px] rounded-[50%] opacity-0 group-hover:opacity-100 duration-300"
+                    className={`w-full h-full rounded-[50%] opacity-0 md:group-hover:opacity-100 duration-300 ${
+                      index + 1 === logonum && "opacity-100"
+                    }`}
                   />
                 </div>
               </div>

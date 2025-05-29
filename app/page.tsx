@@ -102,7 +102,7 @@ export default function Home() {
             <div className="relative ">
               <AlmosteverytopIMg />
               <div className="absolute bottom-0  flex w-full justify-center">
-                <div className="max-md:translate-y-[137px] mxl:translate-x-[137px] max-mxl:w-full  md:[clip-path:polygon(0px_0px,100%_0px,100%_100%,50%_100%,30%_calc(100%-3.71429px-6.95238vw),0px_calc(100%-3.71429px-6.95238vw))] bg-gradient-to-r backdrop-blur-[70px] from-[#004051] to-[#6B6969]">
+                <div className="max-md:translate-y-[137px] xl:translate-x-[137px] max-mxl:w-full  md:[clip-path:polygon(0px_0px,100%_0px,100%_100%,50%_100%,30%_calc(100%-3.71429px-6.95238vw),0px_calc(100%-3.71429px-6.95238vw))] bg-gradient-to-r backdrop-blur-[70px] from-[#004051] to-[#6B6969]">
                   <div className="absolute w-[70px] h-[40px] bg-white bottom-0 left-0"></div>
                   <div>
                     <div className="md:hidden py-5 mxl:py-10 px-5  mxl:pb-30 mxl:px-20 mxl:pr-60 space-y-4 tracking-[.06em] leading-[1.85] ">

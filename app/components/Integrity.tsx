@@ -26,7 +26,7 @@ const Integrity = () => {
         </div>
         <div className="max-md:hidden"></div>
       </div>
-      <div className="grid max-md:grid-cols-1 grid-cols-[6.2fr_6.8fr] ">
+      <div className="grid max-md:grid-cols-1 grid-cols-[1fr_1.45fr] 2xl:grid-cols-[1fr_1.4fr] ">
         <div className="min-w-0 flex px-7 py-10 items-end justify-end">
           <div className="md:hidden">
             <TextReveal classes="">
@@ -52,7 +52,7 @@ const Integrity = () => {
             </TextReveal>
           </div>
         </div>
-        <div className="min-w-0 overflow-visible md:min-w-[530px] md:min-h-[550px]  2xl:w-[910px]! w-full md:mxl:min-w-[658px]! md:mxl:min-h-[619px]!  2xl:aspect-[910/622]!  2xl:h-[622px]!  relative flex items-end  mxl:w-[758px]! mxl:h-[519px]! 4k:min-w-[1000px]!">
+        <div className="min-w-0 overflow-visible  md:min-h-[550px]  mxl:min-w-[658px] mxl:min-h-[619px]  relative flex items-end  ">
           <div className="md:absolute relative  overflow-hidden inset-0">
             {/* <div className="bg-background absolute bottom-[100%] left-0 w-[63px] h-[69px]"></div> */}
             <ImageReveal>
@@ -68,6 +68,7 @@ const Integrity = () => {
                 alt=""
                 width={758}
                 height={519}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, (max-width: 1600px) 65vw, (max-width: 2000px) 75vw"
                 className=" w-full max-md:min-w-[518px] md:min-w-[530px] md:min-h-[550px]  mxl:min-w-[658px] mxl:min-h-[619px] object-center object-cover max-md:h-[510px] h-full"
               />
             </ImageReveal>
