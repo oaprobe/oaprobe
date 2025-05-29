@@ -103,9 +103,9 @@ const HowSaying = () => {
     { dependencies: [width, height], revertOnUpdate: true }
   );
 
-  const handleclick = () => {
-    console.log("clicked");
-  };
+  // const handleclick = () => {
+  //   console.log("clicked");
+  // };
 
   return (
     <section className="textcontainer">
