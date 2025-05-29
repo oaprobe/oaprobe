@@ -26,14 +26,14 @@ const PreLoader = ({
       setBodyElement(document.getElementsByTagName("body")[0]);
     }
   }, []);
-  useLayoutEffect(() => {
-    // console.log(container.current);
-    // if (!container.current) {
-    //   return;
-    // }
-    // container.current.style.opacity = "1";
-    // container.current.style.display = "flex";
-  }, []);
+  // useLayoutEffect(() => {
+  //   // console.log(container.current);
+  //   // if (!container.current) {
+  //   //   return;
+  //   // }
+  //   // container.current.style.opacity = "1";
+  //   // container.current.style.display = "flex";
+  // }, []);
   // useEffect(() => {
   //   console.log(container.current);
   //   if (bodyElement) {
