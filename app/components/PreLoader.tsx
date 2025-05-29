@@ -1,7 +1,7 @@
 "use client";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const PreLoader = ({
   setLoading,
@@ -73,29 +73,30 @@ const PreLoader = ({
   useGSAP(
     () => {
       if (!bodyElement) return;
-      const t = function () {
-        const o = Math.round(i.value);
-        if (counter.current) {
+      if (container.current) {
+        const t = function () {
+          const o = Math.round(i.value);
+
           counter.current.textContent = o.toString();
-        }
-      };
-      const r = gsap.timeline({
-        onComplete: () => {
-          setTimeout(() => {
-            if (container.current) {
-              container.current.remove();
-            }
-          }, 500),
-            (bodyElement.style.overflow = "");
-          setLoading(true);
-        },
-      });
-      r.to(i, {
-        value: 100,
-        onUpdate: t,
-        duration: 5,
-        ease: "power2.out",
-      });
+        };
+        const r = gsap.timeline({
+          onComplete: () => {
+            setTimeout(() => {
+              if (container.current) {
+                container.current.remove();
+              }
+            }, 500),
+              (bodyElement.style.overflow = "");
+            setLoading(true);
+          },
+        });
+        r.to(i, {
+          value: 100,
+          onUpdate: t,
+          duration: 5,
+          ease: "power2.out",
+        });
+      }
     },
     { dependencies: [bodyElement], revertOnUpdate: true }
   );
