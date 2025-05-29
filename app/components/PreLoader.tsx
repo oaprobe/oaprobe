@@ -86,8 +86,8 @@ const PreLoader = ({
               if (container.current) {
                 container.current.remove();
               }
-            }, 500),
-              (bodyElement.style.overflow = "");
+            }, 500);
+            bodyElement.style.overflow = "";
             setLoading(true);
           },
         });
