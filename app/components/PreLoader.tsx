@@ -76,8 +76,9 @@ const PreLoader = ({
       if (container.current) {
         const t = function () {
           const o = Math.round(i.value);
-
-          counter.current.textContent = o.toString();
+          if (counter.current) {
+            counter.current.textContent = o.toString();
+          }
         };
         const r = gsap.timeline({
           onComplete: () => {
