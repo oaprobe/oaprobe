@@ -1,7 +1,9 @@
 @import "tailwindcss";
+
 html {
   scrollbar-gutter: stable;
 }
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -93,6 +95,14 @@ html {
   --my-colors-scrollbar: #000;
   --my-colors-animated_testimonials: #d2d2d5;
   --my-colors-grey-almost: #004051;
+  --my-colors-primary: #3155ff;
+  --my-colors-secondary_dim: #404979;
+  --my-colors-secondary: #101c57;
+  --my-colors-secondary_reverse: #53abfc;
+  --my-colors-primary_text: #fff;
+  --my-colors-dark_border: #434345;
+  --my-colors-secondary_dark: #53abfc;
+  --my-colors-secondary_light: #101c57;
 }
 
 @theme inline {
@@ -225,11 +235,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
   color: rgb(0, 0, 0);
   background-color: rgb(235, 235, 237);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
   --CALC_HEADER_HEIGHT: calc(52px + 12 * ((100vw - 384px) / 688));
   --CALC_FIRST_HEADER_HEIGHT: calc(52px + 12 * ((100vw - 384px) / 688));
@@ -240,6 +252,7 @@ body {
     -1 * calc(calc(52px + 12 * ((100vw - 384px) / 688)) - 1px)
   );
 }
+
 @media screen and (min-width: 1080px) {
   body {
     --CALC_HEADER_HEIGHT: calc(41px + 27 * ((100vw - 1080px) / 840));
@@ -252,37 +265,47 @@ body {
     );
   }
 }
+
 @utility linksnav {
-  @apply min-w-0 fixed bottom-0 left-0 right-0   visible transition-all [transition-property:transform,_visibility] ease-[ease] w-full backdrop-filter z-[2] duration-[.5s] backdrop-blur-[100px] h-[calc(100%+1px-var(--CALC\_FIRST\_HEADER\_HEIGHT))];
+  @apply min-w-0 fixed bottom-0 left-0 right-0 visible transition-all [transition-property:transform_visibility] ease-[ease] w-full backdrop-filter z-[2] duration-[.5s] backdrop-blur-[100px] h-[calc(100%+1px-var(--CALC\_FIRST\_HEADER\_HEIGHT))];
 }
+
 @utility linksnavopen {
   @apply translate-y-0;
 }
+
 @utility linksnavclose {
   @apply -translate-y-full;
 }
 
 @utility compromiseindivcont {
-  @apply grid grid-cols-[repeat(22,minmax(0,1fr))]   justify-around bg-background px-4 py-8 mxl:px-16  mxl:py-10 w-full;
+  @apply grid grid-cols-[repeat(22,minmax(0,1fr))] justify-around bg-background px-4 py-8 mxl:px-16 mxl:py-10 w-full;
 }
+
 @utility compromiseindivcontleftcont {
-  @apply space-y-2.5 col-start-1 col-end-11 mxl:col-end-9  flex flex-col items-center;
+  @apply space-y-2.5 col-start-1 col-end-11 mxl:col-end-9 flex flex-col items-center;
 }
+
 @utility compromiseindivcontleftcontleftnum {
-  @apply text-[2.25rem] font-medium max-sm:self-start  text-black;
+  @apply text-[2.25rem] font-medium max-sm:self-start text-black;
 }
+
 @utility compromiseindivcontleftcontlefdesc {
   @apply text-[1rem] mxl:text-[1.125rem] tracking-[.045em] font-medium text-black;
 }
+
 @utility compromiseindivcontleftcontrightcont {
   @apply col-start-12 col-end-23;
 }
+
 @utility compromiseindivcontleftcontrightcontext {
-  @apply text-[1.8rem] mxl:text-[3rem]  tracking-[.015em]  font-medium text-grey-almost;
+  @apply text-[1.8rem] mxl:text-[3rem] tracking-[.015em] font-medium text-grey-almost;
 }
+
 @utility pattern-review {
   @apply mxl:w-[calc(-12.4857px+8.16071vw)] mxl:h-[calc(-12.4857px+8.16071vw)] min-w-0 bg-primary rounded-[50%] w-[calc(50.2209px+7.51017vw)] h-[calc(50.2209px+7.51017vw)];
 }
+
 @utility mobnavdrop {
   @apply flex bg-background flex-col h-[calc(100%+1px-var(--CALC\_FIRST\_HEADER\_HEIGHT))] ease-[ease] fixed w-full bottom-0 transition-[transform,visibility] duration-[0.5s,0s];
 }
